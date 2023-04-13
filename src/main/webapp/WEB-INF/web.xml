@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+	<!-- if we want to show form.jsp as home page , by default it is index.html/jsp 
+		then we have to add form.jsp in <welcome-file> , and then if form.jsp not 
+		found then which page you want to show is to be written 2nd -->
+	<welcome-file-list>
+		<!-- <welcome-file>form.jsp</welcome-file> -->
+		<!-- <welcome-file>index.jsp</welcome-file> -->
+		<!-- <welcome-file>index1.html</welcome-file> -->
+		<welcome-file>jstl.jsp</welcome-file>
+	</welcome-file-list>
+
+
+	<error-page>
+		<error-code>404</error-code>
+		<location>/error.jsp</location>
+	</error-page>
+
+
+	<servlet>
+		<servlet-name>abc</servlet-name>
+		<servlet-class>com.telusko.AddServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>abc</servlet-name>
+		<url-pattern>/add</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>pqr</servlet-name>
+		<servlet-class>com.telusko.SqServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>pqr</servlet-name>
+		<url-pattern>/sq</url-pattern>
+	</servlet-mapping>
+
+
+
+
+
+	<servlet>
+		<servlet-name>Servlet5</servlet-name>
+		<servlet-class>com.hiddenFormField.Servlet5</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Servlet5</servlet-name>
+		<url-pattern>/servlet5</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Servlet6</servlet-name>
+		<servlet-class>com.hiddenFormField.Servlet6</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Servlet6</servlet-name>
+		<url-pattern>/servlet6</url-pattern>
+	</servlet-mapping>
+
+
+
+
+
+	<servlet>
+		<servlet-name>servlet3</servlet-name>
+		<servlet-class>com.UrlRewritting.Servlet3</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>servlet3</servlet-name>
+		<url-pattern>/servlet3</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>servlet4</servlet-name>
+		<servlet-class>com.UrlRewritting.Servlet4</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>servlet4</servlet-name>
+		<url-pattern>/servlet4</url-pattern>
+	</servlet-mapping>
+
+
+
+
+	<servlet>
+		<servlet-name>servlet1</servlet-name>
+		<servlet-class>com.CookiesHandling.Servlet1</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>servlet1</servlet-name>
+		<url-pattern>/servlet1</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>servlet2</servlet-name>
+		<servlet-class>com.CookiesHandling.Servlet2</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>servlet2</servlet-name>
+		<url-pattern>/servlet2</url-pattern>
+	</servlet-mapping>
+
+
+
+
+	<servlet>
+		<servlet-name>s1</servlet-name>
+		<servlet-class>com.durgesh.AddServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>s1</servlet-name>
+		<url-pattern>/s1</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>s2</servlet-name>
+		<servlet-class>com.durgesh.ProductServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>s2</servlet-name>
+		<url-pattern>/s2</url-pattern>
+	</servlet-mapping>
+
+
+
+
+
+	<servlet>
+		<servlet-name>first</servlet-name>
+		<servlet-class>com.telusko.First</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>first</servlet-name>
+		<url-pattern>/first</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>second</servlet-name>
+		<servlet-class>com.telusko.Second</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>second</servlet-name>
+		<url-pattern>/second</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>register</servlet-name>
+		<servlet-class>com.telusko.RegisterServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>register</servlet-name>
+		<url-pattern>/RegisterServlet</url-pattern>
+	</servlet-mapping>
+</web-app>
